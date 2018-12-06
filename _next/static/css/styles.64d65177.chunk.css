@@ -1,0 +1,106 @@
+.app-photos__images {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.app-photos__image {
+  height: 330px;
+  display: inline-flex;
+  margin: 2px 0px; }
+  .app-photos__image:nth-child(1n) {
+    width: 100%; }
+  .app-photos__image:nth-child(2n) {
+    margin-right: 2px;
+    width: calc(50% - 2px); }
+  .app-photos__image:nth-child(3n) {
+    margin-left: 2px;
+    width: calc(50% - 2px); }
+
+.app-facility-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px; }
+  .app-facility-item__header {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    align-items: center; }
+  .app-facility-item__title {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 20px;
+    margin: 0; }
+  .app-facility-item__description {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #767676; }
+  .app-facility-item__icon {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: center; }
+
+.app-price-item {
+  border: 2px solid #d6d6d6;
+  text-align: center;
+  margin-bottom: 100px; }
+  .app-price-item__title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 45px;
+    padding: 0px 10px; }
+  .app-price-item__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 0px 10px;
+    margin-bottom: 20px; }
+  .app-price-item__options {
+    list-style: none;
+    padding: 0px 45px;
+    margin-bottom: 20px;
+    text-align: left; }
+  .app-price-item__option {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    min-height: 50px; }
+    .app-price-item__option img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
+  .app-price-item__price {
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px; }
+    .app-price-item__price h6 {
+      font-size: 35px;
+      line-height: 50px;
+      font-weight: 400;
+      margin: 0; }
+      .app-price-item__price h6::before {
+        content: '$'; }
+    .app-price-item__price span {
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: 300;
+      color: #8c8c8c; }
+  .app-price-item__btn {
+    margin: 40px auto; }
+
